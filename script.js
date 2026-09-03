@@ -1,20 +1,17 @@
 // Search properties
-
 function searchProperties() {
 
-    const location =
-        document.getElementById("location").value
+    const location = document
+        .getElementById("location")
+        .value
         .toLowerCase()
         .trim();
 
-    const type =
-        document.getElementById("propertyType").value;
+    const type = document.getElementById("propertyType").value;
 
-    const maxRent =
-        document.getElementById("maxRent").value;
+    const maxRent = document.getElementById("maxRent").value;
 
-    const properties =
-        document.querySelectorAll(".property-card");
+    const properties = document.querySelectorAll(".property-card");
 
     let found = 0;
 
@@ -43,7 +40,8 @@ function searchProperties() {
 
         if (locationMatch && typeMatch && rentMatch) {
 
-            property.style.display = "block";
+            property.style.display = "";
+
             found++;
 
         } else {
@@ -51,20 +49,23 @@ function searchProperties() {
             property.style.display = "none";
 
         }
-
     });
-
 
     const noResults =
         document.getElementById("noResults");
 
-    if (found === 0) {
-        noResults.style.display = "block";
-    } else {
-        noResults.style.display = "none";
+    if (noResults) {
+
+        if (found === 0) {
+            noResults.style.display = "block";
+        } else {
+            noResults.style.display = "none";
+        }
+
     }
 
-    document.getElementById("properties")
+    document
+        .getElementById("properties")
         .scrollIntoView({
             behavior: "smooth"
         });
@@ -72,57 +73,56 @@ function searchProperties() {
 
 
 // Favorite button
-
 function toggleFavorite(button) {
 
     if (button.innerHTML === "♡") {
 
         button.innerHTML = "♥";
-        button.style.color = "#e63946";
 
     } else {
 
         button.innerHTML = "♡";
-        button.style.color = "#222";
 
     }
 }
 
 
 // Contact owner
-
 function contactOwner(propertyName) {
 
     alert(
         "Thank you for your interest in " +
         propertyName +
-        "!\n\nOwner contact feature will be added in the next version."
+        "!\n\nOwner contact feature will be added soon."
     );
 }
 
 
 // List property
-
 function showMessage() {
 
     alert(
-        "Property listing feature coming soon!\n\n" +
-        "In the next version, owners will be able to add their properties."
+        "Property listing feature coming soon!"
     );
 }
 
 
-// View all
-
+// View all properties
 function showAllProperties() {
 
     const properties =
         document.querySelectorAll(".property-card");
 
     properties.forEach(function(property) {
-        property.style.display = "block";
+
+        property.style.display = "";
+
     });
 
-    document.getElementById("noResults")
-        .style.display = "none";
+    const noResults =
+        document.getElementById("noResults");
+
+    if (noResults) {
+        noResults.style.display = "none";
+    }
 }

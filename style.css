@@ -223,7 +223,7 @@ body {
     cursor: pointer;
 }
 
-.property-grid {
+.property-grid {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {
     max-width: 1200px;
     margin: auto;
     display: grid;
@@ -231,7 +231,7 @@ body {
     gap: 25px;
 }
 
-.property-card {
+.property-card {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {
     border: 1px solid #eeeeee;
     border-radius: 15px;
     overflow: hidden;
@@ -240,7 +240,7 @@ body {
     transition: 0.3s;
 }
 
-.property-card:hover {
+.property-card {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); } {     width: 100%;     background: white;     border-radius: 16px;     overflow: hidden;     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); }:hover {
     transform: translateY(-7px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.12);
 }
@@ -497,7 +497,7 @@ footer {
         align-items: stretch;
     }
 
-    .property-grid {
+    .property-grid {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -543,7 +543,7 @@ footer {
         margin-bottom: 20px;
     }
 
-    .property-grid {
+    .property-grid {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {     display: grid;     grid-template-columns: repeat(3, 1fr);     gap: 30px;     width: 100%;     max-width: 1200px;     margin: 0 auto; } {
         grid-template-columns: 1fr;
     }
 
@@ -557,5 +557,16 @@ footer {
 
     .cta {
         margin: 50px 5%;
+    }
+}
+@media (max-width: 900px) {
+    .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .property-grid {
+        grid-template-columns: 1fr;
     }
 }
